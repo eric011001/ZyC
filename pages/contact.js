@@ -23,12 +23,7 @@ const contact = () => {
                 />
             </Head>
             <div>
-                <div class="preloader-bg"></div>
-                <div id="preloader">
-                    <div id="preloader-status">
-                        <div class="preloader-position loader"> <span></span> </div>
-                    </div>
-                </div>
+                
                 {/* Progress scroll top */}
                 <div class="progress-wrap">
                     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

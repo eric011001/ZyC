@@ -24,12 +24,7 @@ const about = () => {
                 />
             </Head>
             <div>
-                <div className="preloader-bg"></div>
-                <div id="preloader">
-                    <div id="preloader-status">
-                        <div className="preloader-position loader"> <span></span> </div>
-                    </div>
-                </div>
+                
                 {/* Progress scroll top */}
                 <div className="progress-wrap">
                     <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

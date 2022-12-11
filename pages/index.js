@@ -21,14 +21,7 @@ export default function Home() {
         />
       </Head>
       <div>
-        <div className="preloader-bg"></div>
-        <div id="preloader">
-          <div id="preloader-status">
-            <div className="preloader-position loader">
-              <span></span>
-            </div>
-          </div>
-        </div>
+        
         <div className="progress-wrap">
           <svg
             className="progress-circle svg-content"
