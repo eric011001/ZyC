@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const Footer = ({lenguage}) => {
@@ -76,9 +77,9 @@ const Footer = ({lenguage}) => {
                         <div className="widget clearfix usful-links">
                             <h3 className="widget-title" id="quickLinks">{lenguage == 'EN' ? 'Quick Links' : 'Páginas'}</h3>
                             <ul>
-                                <li><a href="about.html" id="footerAcercaDe">{lenguage == 'EN' ? 'About' : 'Acerca de'}</a></li>
-                                <li><a href="services.html" id="footerServicios">{lenguage == 'EN' ? 'Services' : 'Servicios'}</a></li>
-                                <li><a href="contact.html" id="footerContacto">{lenguage == 'EN' ? 'Contact' : 'Contacto'}</a></li>
+                                <li><Link href="/about" id="footerAcercaDe">{lenguage == 'EN' ? 'About' : 'Acerca de'}</Link></li>
+                                <li><Link href="/services" id="footerServicios">{lenguage == 'EN' ? 'Services' : 'Servicios'}</Link></li>
+                                <li><Link href="/contact" id="footerContacto">{lenguage == 'EN' ? 'Contact' : 'Contacto'}</Link></li>
 
                             </ul>
                         </div>

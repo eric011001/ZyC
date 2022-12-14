@@ -1,9 +1,23 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react'
+import React, {useState, useContext, useEffect} from 'react'
+import { FirebaseContext } from '../firebase';
 Link
 const Menu = ({lenguage, setLenguage}) => {
     const router = useRouter();
+    const {firebase} = useContext(FirebaseContext);
+    const [posts, setPosts] = useState([]); 
+    useEffect(() => {
+        firebase.firestore.collection("posts").get().then(async (querySnapshot) => {
+            const arrayTemp = [];
+            await querySnapshot.forEach((doc) => {
+                arrayTemp.push({id:doc.id, title: doc.data().title, comment: doc.data().comment,type: doc.data().type, img: doc.data().img})
+                // doc.data() is never undefined for query doc snapshots
+            });
+            setPosts(arrayTemp)
+        });
+    }, [])
+
     return(
         <nav className="navbar navbar-expand-md">
           <div className="container">
@@ -70,7 +84,19 @@ const Menu = ({lenguage, setLenguage}) => {
                     </li>
                   </ul>
                 </li>
-
+                {
+                  posts.length > 0 ?
+                  (
+                    <li className="nav-item">
+                      <Link className={`nav-link ${router.pathname == '/projects' ? 'active' : ''}`} href="/projects" id="navBtnAbout">
+                        {lenguage === 'EN' ? 'Projects' : 'Proyectos'}
+                      </Link>
+                    </li>
+                  ):
+                  null
+                  
+                }
+                
                 <li className="nav-item dropdown">
                   {" "}
                   <span className="nav-link" id="navBtnLeng">

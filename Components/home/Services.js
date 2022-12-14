@@ -1,6 +1,27 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel2';
 
 const Services = ({lenguage}) => {
+
+    const options = {
+      loop: true,
+      margin: 30,
+      mouseDrag: true,
+      autoplay: false,
+      dots: true,
+      autoplayHoverPause: true,
+      responsive: {
+			0: {
+				items: 1
+			, }
+			, 600: {
+				items: 2
+			}
+			, 1000: {
+				items: 3
+			}
+		}
+    }
 
     return(
         <section className="services center section-padding bg-gray">
@@ -8,7 +29,7 @@ const Services = ({lenguage}) => {
             <div className="row">
               <div className="col-md-12">
                 <div className="section-subtitle" id="subtitleServices">
-                  What We Do
+                  How We Work
                 </div>
                 <div className="section-title" id="titleServices">
                   Our <span>Services</span>
@@ -16,7 +37,7 @@ const Services = ({lenguage}) => {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-12 owl-carousel owl-theme">
+              <OwlCarousel className="col-md-12 owl-carousel owl-theme" options={options}>
                 <div className="item mb-30">
                   <div className="service-img">
                     <div className="img">
@@ -35,8 +56,7 @@ const Services = ({lenguage}) => {
                       </a>
                     </h5>
                     <p id="constructionDescription">
-                      Quisque imperdie miss sapien porttiton the bibendum.
-                      Pellentesque accumsa amet tincidunt risus nesuen.
+                      Construction of pools and Jacuzzis.
                     </p>
                   </div>
                 </div>
@@ -58,8 +78,7 @@ const Services = ({lenguage}) => {
                       </a>
                     </h5>
                     <p id="serviceRouteDescription">
-                      Quisque imperdie miss sapien porttiton the bibendum.
-                      Pellentesque accumsa amet tincidunt risus nesuen.
+                      We make a service route to support all the pools and hot tubs of our customers.
                     </p>
                   </div>
                 </div>
@@ -77,12 +96,11 @@ const Services = ({lenguage}) => {
                     </div>
                     <h5>
                       <a href="repairs.html" id="repairsTitle">
-                        Repairs
+                        Repair and maintenance
                       </a>
                     </h5>
                     <p id="repairsDescription">
-                      Quisque imperdie miss sapien porttiton the bibendum.
-                      Pellentesque accumsa amet tincidunt risus nesuen.
+                      We take care of any problem or malfunction with your pool or jacuzzi, always looking for the best quality.
                     </p>
                   </div>
                 </div>
@@ -104,12 +122,11 @@ const Services = ({lenguage}) => {
                       </a>
                     </h5>
                     <p id="renovationDescription">
-                      Quisque imperdie miss sapien porttiton the bibendum.
-                      Pellentesque accumsa amet tincidunt risus nesuen.
+                      We improve or upgrade your pool or jacuzzi facilities for your community.
                     </p>
                   </div>
                 </div>
-              </div>
+              </OwlCarousel>
             </div>
           </div>
         </section>

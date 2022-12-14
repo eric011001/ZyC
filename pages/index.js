@@ -6,13 +6,21 @@ import About from "../Components/home/About";
 import AboutValues from "../Components/about/AboutValues";
 import Footer from "../Components/Footer";
 import Process from "../Components/home/Process";
+import Header from "../Components/home/header";
+import HeaderEs from "../Components/home/HeaderEs";
+import Services from "../Components/home/Services";
+import ServicesEs from "../Components/home/ServicesEs";
+
 export default function Home() {
-  const [lenguage, setLenguage] = useState('EN')
+  const [lenguage, setLenguage] = useState('EN');
+
+  
+
   return (
     <div>
       <Head>
-        <meta charset="utf-8"></meta>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="utf-8"></meta>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
@@ -37,14 +45,24 @@ export default function Home() {
           </svg>
         </div>
         <Menu lenguage={lenguage} setLenguage={setLenguage}/>
+        {
+          lenguage =='EN'?
+          <Header lenguage={lenguage}/>:
+          <HeaderEs lenguage={lenguage}/>
+        }
         <About lenguage={lenguage}/>
-        
-        Í
-        
-        
         <Process lenguage={lenguage}/>
+        {
+          lenguage == 'EN'?
+          <Services lenguage={lenguage}/>
+          :
+          <ServicesEs lenguage={lenguage}/>
+        }
+        <Services lenguage={lenguage}/>
         <AboutValues lenguage={lenguage}/>
         <Footer lenguage={lenguage}/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
         <script src="./js/jquery-3.6.0.min.js"></script>
         <script src="./js/jquery-migrate-3.0.0.min.js"></script>
         <script src="./js/modernizr-2.6.2.min.js"></script>
