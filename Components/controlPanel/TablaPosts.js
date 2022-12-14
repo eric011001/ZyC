@@ -17,7 +17,7 @@ const TablaPosts = () => {
             setPosts(arrayTemp)
         });
     }, [])
-    
+    //comment
     
 
     return(

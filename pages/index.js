@@ -6,7 +6,7 @@ import About from "../Components/home/About";
 import AboutValues from "../Components/about/AboutValues";
 import Footer from "../Components/Footer";
 import Process from "../Components/home/Process";
-import Header from "../Components/home/header";
+import Header from "../Components/home/Header";
 import HeaderEs from "../Components/home/HeaderEs";
 import Services from "../Components/home/Services";
 import ServicesEs from "../Components/home/ServicesEs";

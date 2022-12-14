@@ -25,25 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/controlPanel/calls": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/controlPanel/calls.js"
-    ],
-    "/controlPanel/newUser": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/controlPanel/newUser.js"
-    ],
     "/controlPanel/posts": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/controlPanel/posts.js"
-    ],
-    "/controlPanel/users": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/controlPanel/users.js"
     ],
     "/projects": [
       "static/chunks/webpack.js",

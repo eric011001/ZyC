@@ -3,8 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/controlPanel/posts": "pages/controlPanel/posts.js",
-  "/controlPanel/users": "pages/controlPanel/users.js",
-  "/projects": "pages/projects.js",
-  "/controlPanel/calls": "pages/controlPanel/calls.js",
-  "/controlPanel/newUser": "pages/controlPanel/newUser.js"
+  "/projects": "pages/projects.js"
 }
