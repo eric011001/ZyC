@@ -5,7 +5,6 @@ import { FaPen, FaTrash } from "react-icons/fa";
 import { FirebaseContext } from '../../firebase';
 
 const Post = ({post}) => {
-    console.log(post);
     const {id} = post;
     const router = useRouter();
     const {firebase} = useContext(FirebaseContext);
@@ -24,7 +23,7 @@ const Post = ({post}) => {
 
     const editaUsuario = () => {
         router.push({
-          pathname:"/controlPanel/editarUsuario/[id]",
+          pathname:"/controlPanel/editaPost/[id]",
           query: {id}
         })
     }
@@ -43,7 +42,6 @@ const Post = ({post}) => {
         }).then(async (result) => {
           if (result.value) {
             try {
-                console.log(post.id);
                 await firebase.storage.refFromURL(post.img).delete();
                 await firebase.firestore.collection('posts').doc(post.id).delete();
               /*const { data } = await eliminarUsuario({

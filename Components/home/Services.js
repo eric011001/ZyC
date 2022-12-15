@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel2';
 
@@ -51,9 +52,9 @@ const Services = ({lenguage}) => {
                       <i className="norc-new-construction"></i>{" "}
                     </div>
                     <h5>
-                      <a href="construction.html" id="constructionTitle">
+                      <Link href="/services" id="constructionTitle">
                         Construction
-                      </a>
+                      </Link>
                     </h5>
                     <p id="constructionDescription">
                       Construction of pools and Jacuzzis.
@@ -73,9 +74,9 @@ const Services = ({lenguage}) => {
                       <i className="norc-construction-sign"></i>{" "}
                     </div>
                     <h5>
-                      <a href="serviceroute.html" id="serviceRouteTitle">
+                      <Link href="/services" id="serviceRouteTitle">
                         Service route
-                      </a>
+                      </Link>
                     </h5>
                     <p id="serviceRouteDescription">
                       We make a service route to support all the pools and hot tubs of our customers.
@@ -95,9 +96,9 @@ const Services = ({lenguage}) => {
                       <i className="norc-factory"></i>{" "}
                     </div>
                     <h5>
-                      <a href="repairs.html" id="repairsTitle">
+                      <Link href="/services" id="repairsTitle">
                         Repair and maintenance
-                      </a>
+                      </Link>
                     </h5>
                     <p id="repairsDescription">
                       We take care of any problem or malfunction with your pool or jacuzzi, always looking for the best quality.
@@ -117,9 +118,9 @@ const Services = ({lenguage}) => {
                       <i className="norc-radiation"></i>{" "}
                     </div>
                     <h5>
-                      <a href="renovation.html" id="renovationTitle">
+                      <Link href="/services" id="renovationTitle">
                         Renovation
-                      </a>
+                      </Link>
                     </h5>
                     <p id="renovationDescription">
                       We improve or upgrade your pool or jacuzzi facilities for your community.

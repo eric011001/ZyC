@@ -7,7 +7,6 @@ import { FaPen, FaTrash } from "react-icons/fa";
 const Usuario = ({usuario}) => {
     const {id} = usuario;
     const router = useRouter();
-    console.log(usuario);
     /*const [eliminarUsuario] = useMutation(ELIMINA_USUARIO,{
         update(cache) {
             const { obtenerUsuarios } = cache.readQuery({ query: OBTENER_USUARIOS });
@@ -64,7 +63,7 @@ const Usuario = ({usuario}) => {
         <tr className='border-b-2 border-blac'> 
             <th className=" px-4 py-2">{usuario.name}</th>
             <th className=" px-4 py-2">{usuario.email}</th>
-            <th className=" px-4 py-2"><button className='mx-2' onClick={() => editaUsuario()}><FaPen/></button><button className='mx-2' onClick={() => eliminaElUsuario()}><FaTrash/></button></th>
+            <th className=" px-4 py-2">{/*<button className='mx-2' onClick={() => editaUsuario()}><FaPen/></button><button className='mx-2' onClick={() => eliminaElUsuario()}><FaTrash/></button>*/}</th>
         </tr>
     )
 }

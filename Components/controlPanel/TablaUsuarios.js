@@ -12,7 +12,7 @@ const TablaUsuarios = () => {
             await querySnapshot.forEach((doc) => {
                 arrayTemp.push({id:doc.id, name: `${doc.data().name} ${doc.data().lastName}`, email: doc.data().email})
                 // doc.data() is never undefined for query doc snapshots
-                console.log(doc.id, " => ", doc.data().email);
+                
             });
             setUsers(arrayTemp)
         });

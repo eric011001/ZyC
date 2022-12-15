@@ -27,7 +27,6 @@ const newPost = () => {
             comment: Yup.string().required('El comentario es obligatorio')
         }),
         onSubmit: async valores => {
-            console.log(valores);
             if(urlImage !== '' && !subiendo){
                 await firebase.firestore.collection('posts').add({title: valores.title,type:  valores.type, comment: valores.comment, img: urlImage});
                 Swal.fire({

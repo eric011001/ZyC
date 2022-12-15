@@ -101,7 +101,7 @@ const Menu = ({lenguage, setLenguage}) => {
                   {" "}
                   <span className="nav-link" id="navBtnLeng">
                     {" "}
-                    lenguage <i className="fa fa-angle-down"></i>
+                    {lenguage == 'EN' ? 'Lenguage' : 'Lenguaje'} <i className="fa fa-angle-down"></i>
                   </span>
                   <ul className="dropdown-menu last">
                     <li className="dropdown-item">
@@ -133,7 +133,7 @@ const Menu = ({lenguage, setLenguage}) => {
                     href="/contact"
                     id="navBtnContact"
                   >
-                    {lenguage === 'EN' ? 'Contact' : 'Contacto'}
+                    {lenguage === 'EN' ? 'Contact and dates' : 'Contacto y citas'}
                     
                   </Link>
                 </li>

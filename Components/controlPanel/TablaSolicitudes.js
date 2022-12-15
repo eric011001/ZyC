@@ -11,9 +11,18 @@ const TablaSolicitudes = () => {
         firebase.firestore.collection("calls").get().then(async (querySnapshot) => {
             const arrayTemp = [];
             await querySnapshot.forEach((doc) => {
-                arrayTemp.push({id:doc.id, nombre: doc.data().nombre, tipo: doc.data().tipo})
+                arrayTemp.push({
+                    id:doc.id,
+                    nombre: doc.data().nombre,
+                    tipo: doc.data().tipo, 
+                    mensaje: doc.data().mensaje,
+                    sujeto: doc.data().sujeto,
+                    numero: doc.data().numero,
+                    email: doc.data().email,
+                    descripcion: doc.data().descripcion,
+                    servicio: doc.data().servicio,
+                })
                 // doc.data() is never undefined for query doc snapshots
-                console.log(doc.id, " => ", doc.data().title);
             });
             setPosts(arrayTemp)
         });

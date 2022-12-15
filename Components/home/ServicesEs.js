@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel2';
 
@@ -51,9 +52,9 @@ const ServicesEs = ({lenguage}) => {
                       <i className="norc-new-construction"></i>{" "}
                     </div>
                     <h5>
-                      <a href="construction.html" id="constructionTitle">
+                      <Link href="construction.html" id="constructionTitle">
                         Construcción
-                      </a>
+                      </Link>
                     </h5>
                     <p id="constructionDescription">
                         Construcción de Albercas y Jacuzzis.
@@ -73,9 +74,9 @@ const ServicesEs = ({lenguage}) => {
                       <i className="norc-construction-sign"></i>{" "}
                     </div>
                     <h5>
-                      <a href="serviceroute.html" id="serviceRouteTitle">
+                      <Link href="/services" id="serviceRouteTitle">
                         Ruta de servicio
-                      </a>
+                      </Link>
                     </h5>
                     <p id="serviceRouteDescription">
                         Realizamos una ruta de servicio para dar soporte a todas las albercas y jacuzzis de nuestros clientes.
@@ -95,9 +96,9 @@ const ServicesEs = ({lenguage}) => {
                       <i className="norc-factory"></i>{" "}
                     </div>
                     <h5>
-                      <a href="repairs.html" id="repairsTitle">
+                      <Link href="/services" id="repairsTitle">
                         Reparación y mantenimiento
-                      </a>
+                      </Link>
                     </h5>
                     <p id="repairsDescription">
                         Nos encargamos de cualquier problema o desperfecto con su alberca o jacuzzi, siempre buscando la mejor calidad.
@@ -117,9 +118,9 @@ const ServicesEs = ({lenguage}) => {
                       <i className="norc-radiation"></i>{" "}
                     </div>
                     <h5>
-                        <a href="renovation.html" id="renovationTitle">
+                        <Link href="/services" id="renovationTitle">
                             Remodelación
-                        </a>
+                        </Link>
                     </h5>
                     <p id="renovationDescription">
                         Mejoramos o readaptamos sus instalaciones de alberca o jacuzzi para su comidad.
