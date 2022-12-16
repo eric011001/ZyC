@@ -1,5 +1,5 @@
 import React from 'react'
-
+import h1 from '../../public/img/banner2.jpg'
 
 const Process = ({lenguage}) => {
 
@@ -7,7 +7,7 @@ const Process = ({lenguage}) => {
         <section className="process">
             <div
                 className="section-padding bg-img bg-fixed section-padding"
-                data-background="img/banner2.jpg"
+                style={{backgroundImage: `url(${h1.src})`}}
                 data-overlay-dark="6"
             >
                 <div className="container">
