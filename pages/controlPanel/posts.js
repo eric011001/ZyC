@@ -31,22 +31,23 @@ const users = () => {
                 <title>ZyC pool Spa</title>
                 <link rel="shortcut icon" href="../img/favicon.png" />
             </Head>
-            
-            <div className='p-2'>
-                <div className='flex justify-center p-5 text-2xl color-black  align-items justify-center'>
-                    <div className=''>
-                        <img src='../img/logo.png' className='mb-2'/>
-                        <div className='flex justify-center text-center'>
-                            <div>
-                                <span className='mb-2'>Administrador de posts</span><br/>
-                                <button onClick={() => router.push('/controlPanel/newPost')} className='p-2 px-5 bg-naranja rounded-xl text-white'>Agregar post</button>
+            <div className='w-full h-screen'>
+                <div className='p-2'>
+                    <div className='flex justify-center p-5 text-2xl color-black  align-items justify-center'>
+                        <div className=''>
+                            <img src='../img/logo.png' className='mb-2'/>
+                            <div className='flex justify-center text-center'>
+                                <div>
+                                    <span className='mb-2'>Administrador de posts</span><br/>
+                                    <button onClick={() => router.push('/controlPanel/newPost')} className='p-2 px-5 bg-naranja rounded-xl text-white'>Agregar post</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <TablaPosts/>
                 </div>
-                <TablaPosts/>
+                <MenuBack/>
             </div>
-            <MenuBack/>
         </div>
     )
 }
