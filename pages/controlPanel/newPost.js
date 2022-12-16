@@ -85,7 +85,7 @@ const newPost = () => {
                 <div className='text-xl font-bold'>
                     <h1>Agregar post</h1>
                 </div>
-                <form onSubmit={formikPost.handleSubmit} className='mt-5'>
+                <form onSubmit={formikPost.handleSubmit} className='mt-5 overflow-scroll'>
                     <div className='lg:flex xl:flex'>
                         <div className='mr-2 lg:w-1/2 md:w-1/2'>
                             <label className="font-semibold mt-2 mb-2 ml-4 mr-2 " htmlFor="title">Titulo:</label>

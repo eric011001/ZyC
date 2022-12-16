@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/controlPanel/posts": [
+    "/controlPanel/newPost": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/controlPanel/posts.js"
+      "static/chunks/pages/controlPanel/newPost.js"
     ]
   },
   "ampFirstPages": []
