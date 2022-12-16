@@ -3,7 +3,7 @@ import Link from 'next/link';
 const MenuBack = () => {
 
     return(
-        <section id="bottom-navigation" className="absolute block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+        <section id="bottom-navigation" className="absolute inset-x-0 bottom-0 z-10 bg-white shadow">
 		<div id="tabs" className="flex justify-between">
 			<Link href="/controlPanel/users" className="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 				<svg width="25" height="25" viewBox="0 0 42 42" className="inline-block mb-1">
