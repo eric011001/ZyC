@@ -26,7 +26,7 @@ const TablaUsuarios = () => {
                 <tr className="border-b-2 border-black">
                     <th className=" px-4 py-2">Nombre</th>
                     <th className=" px-4 py-2">Email</th>
-                    <th className=" px-4 py-2">Acciones</th>
+                    {/*<th className=" px-4 py-2">Acciones</th>*/}
                 </tr>
             </thead>
             <tbody className=''>

@@ -7,7 +7,7 @@ const TablaPosts = () => {
     const {firebase} = useContext(FirebaseContext);
 
     useEffect(() => {
-        firebase.firestore.collection("posts").get().then(async (querySnapshot) => {
+        firebase.firestore.collection("posts").onSnapshot(async (querySnapshot) => {
             const arrayTemp = [];
             await querySnapshot.forEach((doc) => {
                 arrayTemp.push({id:doc.id, title: doc.data().title, comment: doc.data().comment,type: doc.data().type, img: doc.data().img})

@@ -34,6 +34,7 @@ const Solicitud = ({call}) => {
           <p>Nombre: <span>${call.nombre}</span></p>
           <p>Numero: <span>${call.numero}</span></p>
           <p>Servicio: <span>${call.servicio}</span></p>
+          <p>Fecha: <span>${call.fecha}</span></p>
           <p>Descripción: <span>${call.descripcion}</span></p>
           </div>
         ` 

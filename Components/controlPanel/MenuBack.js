@@ -3,7 +3,7 @@ import Link from 'next/link';
 const MenuBack = () => {
 
     return(
-        <section id="bottom-navigation" className="absolute inset-x-0 bottom-0 z-10 bg-white shadow" style={{position: 'absolute', left: '0px', right:'0px'}}>
+        <section id="bottom-navigation" className="fixed bottom-0 left-0 right-0 z-10 bg-white shadow" style={{position: 'fixed', bottom: '0px', left: '0px', right:'0px'}}>
 		<div id="tabs" className="flex justify-between">
 			<Link href="/controlPanel/users" className="w-full flex focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 				<div >

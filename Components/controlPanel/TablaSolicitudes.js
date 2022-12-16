@@ -8,7 +8,7 @@ const TablaSolicitudes = () => {
     const {firebase} = useContext(FirebaseContext);
 
     useEffect(() => {
-        firebase.firestore.collection("calls").get().then(async (querySnapshot) => {
+        firebase.firestore.collection("calls").onSnapshot(async (querySnapshot) => {
             const arrayTemp = [];
             await querySnapshot.forEach((doc) => {
                 arrayTemp.push({
@@ -21,6 +21,7 @@ const TablaSolicitudes = () => {
                     email: doc.data().email,
                     descripcion: doc.data().descripcion,
                     servicio: doc.data().servicio,
+                    fecha: doc.data().fecha
                 })
                 // doc.data() is never undefined for query doc snapshots
             });

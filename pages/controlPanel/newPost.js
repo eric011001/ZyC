@@ -81,7 +81,7 @@ const newPost = () => {
                 <title>ZyC pool Spa</title>
                 <link rel="shortcut icon" href="../img/favicon.png" />
             </Head>
-            <div className='p-5'>
+            <div className='p-5 mb-5'>
                 <div className='text-xl font-bold'>
                     <h1>Agregar post</h1>
                 </div>

@@ -26,13 +26,13 @@ const users = () => {
     }, [])
     
     return(
-        <div>
+        <div className='w-full h-screen'>
             <Head>
                 <title>ZyC pool Spa</title>
                 <link rel="shortcut icon" href="../img/favicon.png" />
             </Head>
             <div className='w-full h-screen relative'>
-                <div className='p-2'>
+                <div className='p-2 mb-11'>
                     <div className='flex justify-center p-5 text-2xl color-black  align-items justify-center'>
                         <div className=''>
                             <img src='../img/logo.png' className='mb-2'/>

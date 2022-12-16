@@ -11,17 +11,19 @@ const DateForm = ({lenguage}) => {
             name: '',
             servicio: '',
             numero: '',
-            descripcion: ''
+            descripcion: '',
+            fecha: ''
         },
         validationSchema: Yup.object({
             name: Yup.string().required(`${lenguage == 'EN' ? 'Name is required' : 'El nombre es obligariorio'}`),
             servicio: Yup.string().required(`${lenguage == 'EN' ? 'Service is required' : 'El servicio es requerido'}`),
             numero: Yup.string().required(`${lenguage == 'EN' ? 'Number is required' : 'El numero es requerido'}`),
-            descripcion: Yup.string().required(`${lenguage == 'EN' ? 'Description is required' : 'La descripcion es requerida'}`)
+            descripcion: Yup.string().required(`${lenguage == 'EN' ? 'Description is required' : 'La descripcion es requerida'}`),
+            fecha: Yup.string().required(`${lenguage == 'EN' ? 'Date is required' : 'La fecha es requerida'}`)            
         }),
         onSubmit: async valores => {
             console.log(valores);
-            await firebase.firestore.collection('calls').add({nombre: valores.name,servicio: valores.servicio,numero: valores.numero,descripcion: valores.descripcion, tipo:'Date'});
+            await firebase.firestore.collection('calls').add({nombre: valores.name,servicio: valores.servicio,numero: valores.numero,descripcion: valores.descripcion,fecha: valores.fecha, tipo:'Date'});
             Swal.fire({
                 icon: 'success',
                 title: 'Creado',
@@ -57,6 +59,12 @@ const DateForm = ({lenguage}) => {
                                 <input id="numero" name="numero" type="text" placeholder={lenguage == 'EN' ? "Your Number *" : 'Numero *'} onChange={formikContact.handleChange} onBlur={formikContact.handleBlur} value={formikContact.values.numero}/>
                                 {formikContact.touched.numero && formikContact.errors.numero ? (
                                     <span className="bg-white justify-center flex text-red-500">{formikContact.errors.numero}</span>
+                                ): null}
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input id="fecha" className='bg-white w-full' name="fecha" type="date" placeholder={lenguage == 'EN' ? "Date *" : 'Fecha *'} onChange={formikContact.handleChange} onBlur={formikContact.handleBlur} value={formikContact.values.fecha} min/>
+                                {formikContact.touched.fecha && formikContact.errors.fecha ? (
+                                    <span className="bg-white justify-center flex text-red-500">{formikContact.errors.fecha}</span>
                                 ): null}
                             </div>
                             <div class="col-md-12 form-group">

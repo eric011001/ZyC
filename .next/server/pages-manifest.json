@@ -2,5 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/controlPanel/calls": "pages/controlPanel/calls.js",
+  "/controlPanel/posts": "pages/controlPanel/posts.js",
   "/controlPanel/newPost": "pages/controlPanel/newPost.js"
 }
