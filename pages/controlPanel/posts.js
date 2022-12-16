@@ -31,7 +31,7 @@ const users = () => {
                 <title>ZyC pool Spa</title>
                 <link rel="shortcut icon" href="../img/favicon.png" />
             </Head>
-            <div className='w-full h-screen'>
+            <div className='w-full h-screen relative'>
                 <div className='p-2'>
                     <div className='flex justify-center p-5 text-2xl color-black  align-items justify-center'>
                         <div className=''>
