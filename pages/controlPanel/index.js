@@ -85,7 +85,7 @@ const index = () => {
                         </div>
 
                         <div className="flex flex-wrap justify-center">
-                                <button type="submit" className="m-2 block h-10 w-full sm:w-full md:w-full lg:w-full xl:w-full h-10 bg-stone-500 hover:bg-stone-300 rounded-xl text-white font-semibold transition-all">Iniciar sesión</button>
+                                <button type="submit" className="m-2 block h-10 w-full sm:w-full md:w-full lg:w-full xl:w-full h-10 bg-naranja hover:bg-stone-300 rounded-xl text-white font-semibold transition-all">Iniciar sesión</button>
                         </div>
 
                     {mensaje && mostrarMensaje()}

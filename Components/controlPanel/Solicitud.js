@@ -23,7 +23,6 @@ const Solicitud = ({call}) => {
     })*/
 
     const editaUsuario = () => {
-      console.log(call);
       Swal.fire({
         title: 'Detalles de la llamada',
         confirmButtonText: 'Hecho',
